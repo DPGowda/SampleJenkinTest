@@ -3,7 +3,9 @@
   <groupId>JenkinPracticeProgram</groupId>
   <artifactId>JenkinPracticeProgram</artifactId>
   <version>0.0.1-SNAPSHOT</version>
-  
+  <profiles>
+	<profile>
+		<id>FR</id>
    <build>
 		<plugins>
 			<plugin>
@@ -12,12 +14,48 @@
 				<version>2.18.1</version>
 				<configuration>
 					<suiteXmlFiles>
-						<suiteXmlFile>testng.xml</suiteXmlFile>
+						<suiteXmlFile>fullregression.xml</suiteXmlFile>
 					</suiteXmlFiles>
 				</configuration>
 			</plugin>
 		</plugins>
 	</build>
+	</profile>
+	<profile>
+		<id>RR</id>
+   <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>regionalregresion.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	</profile>
+	<profile>
+		<id>UN</id>
+   <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-surefire-plugin</artifactId>
+				<version>2.18.1</version>
+				<configuration>
+					<suiteXmlFiles>
+						<suiteXmlFile>unit.xml</suiteXmlFile>
+					</suiteXmlFiles>
+				</configuration>
+			</plugin>
+		</plugins>
+	</build>
+	</profile>
+	</profiles>
   
  <dependencies>
   <dependency>
