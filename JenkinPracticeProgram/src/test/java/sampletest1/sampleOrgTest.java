@@ -13,11 +13,12 @@ public class sampleOrgTest {
 		System.out.println(url);
 		System.out.println(username);
 		System.out.println(username);
+		System.out.println("exicute Test 3");
 		
 	}
 	
 	@Test
 	public void test2() {
-		System.out.println("exicute Test 2");
+		System.out.println("exicute Test 4");
 	}
 }
