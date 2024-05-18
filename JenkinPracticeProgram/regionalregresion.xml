@@ -8,11 +8,6 @@
 		<include name="Test1"></include>
 	  </methods>
 		</class>
-		<class name="sampleTest2.SampleContactTest">
-			<methods>
-				<include name="test1"></include>
-			</methods>
-		</class>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->
