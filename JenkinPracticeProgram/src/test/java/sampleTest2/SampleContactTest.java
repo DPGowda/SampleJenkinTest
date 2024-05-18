@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class SampleContactTest {
 	
-	@Test
+	@Test (groups="smoketesting")
 	public void test1() {
 		System.out.println("exicute contact test1");
 	}

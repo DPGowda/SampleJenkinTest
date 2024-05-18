@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 public class sampleOrgTest {
 	
-	@Test
+	@Test (groups="smoketesting")
 	public void Test1() {
 		String url = System.getProperty("url");
 		String username = System.getProperty("username");
